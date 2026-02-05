@@ -20,7 +20,7 @@ const MetaAdsCharts = () => {
         },
         {
           label: 'Amount spent',
-          value: '$11.04',
+          value: '$11.4',
           hasInfo: true
         }
       ],
