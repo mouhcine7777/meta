@@ -20,7 +20,7 @@ const MetaAdsCharts = () => {
         },
         {
           label: 'Amount spent',
-          value: '$11.4',
+          value: '$11.04',
           hasInfo: true
         }
       ],
@@ -80,26 +80,6 @@ const MetaAdsCharts = () => {
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-lg font-semibold text-gray-900">Performance overview</h2>
-            <div className="flex items-center gap-3">
-              <div className="relative">
-                <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50 text-sm">
-                  {dayView}
-                  <ChevronDown size={16} className="text-gray-500" />
-                </button>
-              </div>
-              <div className="relative">
-                <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50 text-sm">
-                  Activity history: {activityHistory}
-                  <ChevronDown size={16} className="text-gray-500" />
-                </button>
-              </div>
-              <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50 text-sm">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                  <path d="M3 2h2v2H3V2zm0 3h2v2H3V5zm0 3h2v2H3V8zm3-6h2v2H6V2zm0 3h2v2H6V5zm0 3h2v2H6V8zm3-6h2v2H9V2zm0 3h2v2H9V5zm0 3h2v2H9V8zm3-6h2v2h-2V2zm0 3h2v2h-2V5zm0 3h2v2h-2V8z"/>
-                </svg>
-                Customize
-              </button>
-            </div>
           </div>
 
           {/* Metrics Cards - From JSON */}
@@ -200,20 +180,6 @@ const MetaAdsCharts = () => {
             <h3 className="text-base font-semibold text-gray-900">
               {chartData.demographics.title}
             </h3>
-            <div className="flex items-center gap-3">
-              <div className="relative">
-                <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50 text-sm min-w-[120px]">
-                  {ageGenderView}
-                  <ChevronDown size={16} className="text-gray-500 ml-auto" />
-                </button>
-              </div>
-              <div className="relative">
-                <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50 text-sm min-w-[120px]">
-                  {resultsView}
-                  <ChevronDown size={16} className="text-gray-500 ml-auto" />
-                </button>
-              </div>
-            </div>
           </div>
 
           {/* Age and Gender Chart - From JSON */}
